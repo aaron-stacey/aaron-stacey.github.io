@@ -1,0 +1,10 @@
+body {
+  margin: 0;
+  font-family: monospace;
+}
+
+main {
+  display: grid;
+  place-content: center;
+  height: 100vh;
+}
