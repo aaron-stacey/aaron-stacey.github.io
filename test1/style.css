@@ -1,0 +1,26 @@
+body {
+  margin: 0;
+  background: url(./wgo.jpg);
+  background-attachment: fixed;
+}
+main {
+  background: darkgray;
+  height: 100vh;
+}
+
+.one {
+  background-color: red;
+  height: 100%;
+}
+.two {
+  background-color: orangered;
+  height: 100%;
+  min-height: 600px;
+}
+.three {
+  background-color: orange;
+  height: 100%;
+}
+.four {
+  height: 100%;
+}
