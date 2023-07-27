@@ -6,6 +6,11 @@
   --clr-neutral: #efefef;
 }
 
+* {
+  margin: 0;
+  padding: 0;
+}
+
 body {
   background: var(--clr-neutral);
   font-family: "Open Sans", sans-serif;
@@ -23,7 +28,45 @@ img {
   display: block;
   width: 100%;
 } */
+/* start grid */
 
+.layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.branding {
+  grid-column: 1/3;
+  grid-row: 1;
+}
+
+.card.items {
+  grid-column: 1/2;
+  grid-row: 2/4;
+}
+
+.card.name {
+  grid-column: 2;
+  grid-row: 2;
+}
+.card.payment {
+  grid-column: 2;
+  grid-row: 3;
+}
+
+.calc {
+  background: coral;
+  grid-column: 1/3;
+  grid-row: 4;
+}
+
+.cta {
+  background: lightgreen;
+  grid-column: 1/3;
+  grid-row: 5;
+}
+/* end grid */
 .branding {
   display: flex;
   align-items: center;
@@ -38,6 +81,7 @@ img {
 }
 
 .card {
+  padding: 10px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -57,4 +101,10 @@ img {
   top: -7px;
   left: 25px;
   background: var(--clr-primary);
+}
+
+.cta {
+  display: flex;
+  /* align-items: center; */
+  justify-content: center;
 }
