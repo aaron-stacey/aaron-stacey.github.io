@@ -12,12 +12,39 @@
   </head>
   <body>
     <main class="layout">
-      <header class="branding"></header>
-      <section class="items"></section>
-      <section class="name"></section>
-      <section class="payment"></section>
+      <header class="branding">
+        <!-- <a href="#"> -->
+        <img
+          src="./images/coffee_masters_logo.png"
+          alt="Coffee Masters Logo"
+          srcset=""
+        />
+        <h1>Coffee Masters</h1>
+        <!-- </a> -->
+      </header>
+      <section class="items card">
+        <h2>Items</h2>
+      </section>
+      <section class="name card">
+        <h2>Name</h2>
+        <div class="input-field">
+          <label for="name">Name for order</label>
+          <input type="text" name="name" id="name" />
+        </div>
+      </section>
+      <section class="payment card">
+        <h2>Payment</h2>
+        <div class="input-field">
+          <label for="name">Card number</label>
+          <input type="text" name="name" id="name" />
+        </div>
+        <div class="input-field">
+          <label for="name">CCV number</label>
+          <input type="text" name="name" id="name" />
+        </div>
+      </section>
       <section class="calc"></section>
-      <section class="cta"></section>
+      <section class="cta"><button>Place order</button></section>
     </main>
   </body>
 </html>

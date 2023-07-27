@@ -5,3 +5,56 @@
   --clr-accent: #deb993;
   --clr-neutral: #efefef;
 }
+
+body {
+  background: var(--clr-neutral);
+  font-family: "Open Sans", sans-serif;
+}
+
+input {
+  height: 30px;
+  background: transparent;
+  border: 2px solid var(--clr-brand);
+  border-radius: 100px;
+}
+
+/* 
+img {
+  display: block;
+  width: 100%;
+} */
+
+.branding {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 80px;
+  background: var(--clr-brand);
+  color: var(--clr-secondary);
+}
+
+.branding img {
+  height: 50%;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: var(--clr-brand);
+  background: var(--clr-primary);
+}
+
+.input-field {
+  display: flex;
+  flex-direction: column;
+  color: var(--clr-brand);
+  position: relative;
+}
+
+.input-field > label {
+  position: absolute;
+  top: -7px;
+  left: 25px;
+  background: var(--clr-primary);
+}
