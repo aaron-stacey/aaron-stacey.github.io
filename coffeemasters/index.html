@@ -11,19 +11,44 @@
     <title>Coffee Masters</title>
   </head>
   <body>
+    <header class="branding">
+      <!-- <a href="#"> -->
+      <img
+        src="./images/coffee_masters_logo.png"
+        alt="Coffee Masters Logo"
+        srcset=""
+      />
+      <h1>Coffee Masters</h1>
+      <!-- </a> -->
+    </header>
     <main class="layout">
-      <header class="branding">
-        <!-- <a href="#"> -->
-        <img
-          src="./images/coffee_masters_logo.png"
-          alt="Coffee Masters Logo"
-          srcset=""
-        />
-        <h1>Coffee Masters</h1>
-        <!-- </a> -->
-      </header>
       <section class="items card">
         <h2>Items</h2>
+        <div class="item">
+          <div>
+            <span class="item-quant">1x</span
+            ><span class="item-name">Cappucino</span
+            ><span class="item-price">$6.00</span>
+          </div>
+          <div>Light Foam</div>
+        </div>
+        <div class="item">
+          <div>
+            <span class="item-quant">1x</span
+            ><span class="item-name">Cappucino</span
+            ><span class="item-price">$7.90</span>
+          </div>
+          <div>Almond Milk</div>
+          <div>Double Espresso Shot</div>
+        </div>
+        <div class="item">
+          <div>
+            <span class="item-quant">1x</span
+            ><span class="item-name">Croissant</span
+            ><span class="item-price">$5.37</span>
+          </div>
+          <div>Butter</div>
+        </div>
       </section>
       <section class="name card">
         <h2>Name</h2>
@@ -43,8 +68,12 @@
           <input type="text" name="name" id="name" />
         </div>
       </section>
-      <section class="calc">numbers please</section>
-      <section class="cta"><button>Place order</button></section>
+      <section class="calc">
+        <div class="total"><span>Subtotal:</span><span>$19.27</span></div>
+        <div class="total"><span>Tax:</span><span>$0.96</span></div>
+        <div class="total"><span>Total:</span><span>$20.23</span></div>
+        <button>Place order</button>
+      </section>
     </main>
   </body>
 </html>
