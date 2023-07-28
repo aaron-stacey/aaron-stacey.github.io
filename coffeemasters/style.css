@@ -112,14 +112,15 @@ button {
   padding: 2px 2px;
 }
 /* TODO: FIX */
+/* ! instructor used border-bottom -- KISS */
 /* accent line */
 .item::after {
   content: "";
   background: var(--clr-accent);
-  width: 100%;
+  width: 100px;
   height: 1px;
   left: 0px;
-  bottom: 1px;
+  top: 5px;
 }
 
 .item > div {
@@ -128,7 +129,12 @@ button {
 
 .item > div:first-child {
   display: flex;
+  gap: 5px;
   color: black;
+}
+
+.item-name {
+  flex-grow: 1;
 }
 
 .calc {
